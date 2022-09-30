@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(234, 225, 225);
+    text-align: center;
+    margin: 200px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    color: rgb(13, 92, 95);
+    font-size: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+button:hover {
+    background-color: red;
+    font-size: 25px;
+}
