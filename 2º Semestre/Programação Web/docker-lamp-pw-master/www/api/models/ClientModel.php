@@ -16,13 +16,7 @@
            return $this -> Connection -> query($sql); 
         }
 
-        public function consultClient($idClient){
-         require_once('db/ConnectClass.php');
-         $ConnectClass = new ConnectClass();
-         $ConnectClass -> openConnect();
-         $this -> Connection =  $ConnectClass -> getConn();
-         
-         
+        public function consultClient($idClient){      
          $sql = "
                   SELECT * FROM clients
                   WHERE
@@ -42,13 +36,11 @@
                '{$client['email']}', 
                '{$client['address']}'
                )";
-
-              $this -> Connection -> query($sql);
-              
+  
               return $this -> Connection -> insert_id;
         }
 
-        public function updateClient($client){
+        public function updateClient($idClient, $client){
          $sql = "
             UPDATE
                clients
@@ -58,7 +50,7 @@
                phone='{$client['phone']}',
                address='{$client['address']}',
             WHERE
-               idClient = $ {$client['idClient']}
+               idClient = $ {$client}
          ";
          return $this -> Connection -> query($sql);
         }
@@ -66,10 +58,9 @@
         public function deleteClient($idClient){
          $sql = "
 
-         DELETE FROM 
-            clients 
+         DELETE FROM clients 
          WHERE 
-            idClient = $idClient
+            idClient = {$idClient}
          ";
          return $this -> Connection -> query($sql);
         }

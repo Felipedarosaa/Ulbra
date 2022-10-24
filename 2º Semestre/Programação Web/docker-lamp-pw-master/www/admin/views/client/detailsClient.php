@@ -4,31 +4,31 @@
     <tr>
         <th>Código Cliente</th>
         <td>
-            <?=$arrayClient['idClient'] ?>
+            <?= $arrayClient['idClient'] ?>
         </td>
     </tr>
     <tr>
         <th>Nome</th>
         <td>
-            <?=$arrayClient['name'] ?>
+            <?= $arrayClient['name'] ?>
         </td>
     </tr>
     <tr>
         <th>email</th>
         <td>
-            <?=$arrayClient['email'] ?>
+            <?= $arrayClient['email'] ?>
         </td>
     </tr>
     <tr>
         <th>telefone</th>
         <td>
-            <?=$arrayClient['name'] ?>
+            <?= $arrayClient['name'] ?>
         </td>
     </tr>
     <tr>
         <th>Endereço</th>
         <td>
-            <?=$arrayClient['address'] ?>
+            <?= $arrayClient['address'] ?>
         </td>
     </tr>
 </table>
