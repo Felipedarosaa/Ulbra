@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+}
+nav{
+    background-color: rgb(185, 179, 179);
+    padding-left: 15px;
+    margin: 0px auto;
+}
+
+section{
+    background-color: rgb(4, 87, 87);
+}
+
+p{
+    color: white;
+    font-size: 12pt;
+    padding: 15px;
+}
+
+h4{
+    padding: 15px;
+}
+
+h5{
+    padding: 15px;
+    color: white;
+}

@@ -1,0 +1,57 @@
+a{
+    border: solid 2px black;
+    margin: 2px;
+}
+
+#menu_home{
+    color: black;
+    border: solid 3px;
+    width: 100px;
+    text-align: center;
+}
+
+#menu_home:hover {
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu_calculadora {
+    color: white;
+}
+
+#menu_calculadora:hover {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu_conta_luz {
+    color: white;
+}
+
+#menu_conta_luz:hover {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu_verifica_maior {
+    color: white;
+}
+
+#menu_verifica_maior:hover {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu_Idades {
+    color: white;
+}
+
+#menu_Idades:hover {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,104 @@
+body{
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+h2{
+    text-shadow: blue 2px 2px 2px;
+}
+
+p{
+    color: white;
+}
+
+
+/*cabeçalho*/
+header{
+    text-align: left;
+    background-color: rgb(216, 207, 207);
+    color: black;
+    font-size: 18px;
+    margin: 0px auto;
+    padding: 15px;
+    padding-left: 100px;
+}
+
+button{
+    background-color: whitesmoke;
+    color: rgb(59, 132, 132);
+    font-size: 10px;
+}
+
+button:hover{
+    background-color: rgb(63, 7, 7);
+    color: rgba(64, 145, 238, 0.652);
+}
+
+
+/*Sobre mim*/
+section{
+    color: white;
+    text-align: center;
+    background-color:rgb(107, 96, 96);
+    padding: 15px;
+    margin: 0px auto;
+}
+
+#idFoto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/*Redes sociais*/
+nav{    
+    color: white;
+    background-color: rgba(9, 63, 85, 0.588);
+    text-align: center;
+    padding: 15px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#idIcone{
+    width: 35px;
+    text-align: center;
+}
+
+
+/*meus trabalhos*/
+article{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.855);
+    padding: 15px;
+}
+
+#idTrabalhos{
+    color: white;
+    text-shadow: blue 2px 2px 2px;
+    padding-top: 60px;
+    float: center;
+}
+
+#idTitulo{
+    padding-top: 35px;
+    float: center;  
+}
+
+#idImagemTrab{
+    padding: 5px;
+    width: 280px;
+    height: 160px;  
+}
+
+
+/*rodapé*/
+footer{
+    background-color: rgb(145, 151, 156);
+    text-align: center;
+    padding: 20px;
+}
