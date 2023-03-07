@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "c63ae4e1-6572-42d7-82ce-7fc700c7d983",
+		"name": "API Engenharia de Software",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23969944"
+	},
+	"item": [
+		{
+			"name": "API Teste",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Código do Status deve ser 200\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.boredapi.com/api",
+					"protocol": "https",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Teste 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"O código de status deve ser 200\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.boredapi.com/api/activity/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Teste 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.boredapi.com/api/activity?type=recreational",
+					"protocol": "https",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "recreational"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Teste 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.boredapi.com/api/activity?key=4290333",
+					"protocol": "https",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "4290333"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teste Atividade filtro recreacional",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"O tipo deve ser Recreational\", function() {\r",
+							"    let json = pm.response.json();\r",
+							"    pm.expect(json.type).to.eql(\"recreational\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"O código do Status dev ser 200\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.boredapi.com/api/activity?type=recreational",
+					"protocol": "https",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "recreational"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
